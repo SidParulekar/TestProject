@@ -46,6 +46,10 @@ public class NewBehaviourScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Level Complete");
+        if(collision.tag == "Door")
+        {
+            Debug.Log("Level Complete");
+        }
+        
     }
 }
