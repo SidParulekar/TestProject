@@ -12,6 +12,8 @@ public class NewBehaviourScript : MonoBehaviour
 
     public GameObject gameLostPanel;
 
+    public CameraShake cameraShake;
+
     private bool isGameOver = false;
 
     public float speed;
@@ -68,6 +70,7 @@ public class NewBehaviourScript : MonoBehaviour
         else if (collider.tag == "Enemy")
         {
             Debug.Log("Game Lost");
+            StartCoroutine(cameraShake.Shake(0.15f, 0.4f));
             gameLostPanel.SetActive(true);
             isGameOver = true;
         }
