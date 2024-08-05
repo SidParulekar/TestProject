@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Door
   - Enemy
+  - Scene_1_Button
+  - Scene_2_Button
+  - Scene_3_Button
   layers:
   - Default
   - TransparentFX
